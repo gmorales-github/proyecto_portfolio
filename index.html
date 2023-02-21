@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto integrador 2</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <a href="#inicio" aria-label="Ir a la sección de inicio" class="logo">
+            <img src="https://www.eidosglobal.org/images/logo/eidoslogo.png" alt="Logo de Eidos">
+        </a>
+        
+        <!-- Boton para menu mobile -->
+        <button id="menu-button">
+            <img src="img/open-menu.svg" id="open-menu">
+            <img src="img/close-menu.svg" id="close-menu">
+        </button>
+        
+        <nav>
+            <ul id="menu">
+                <li class="menu-item active">
+                    <a href="#inicio">Inicio</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <figure class="presentacion-img">
+                <img src="img/foto.jpeg" alt="Foto de presentación">
+
+
+
+            </figure>
+            <article class="presentacion">
+                <h1>Hola! Soy Leila Prado</h1>
+                <p>Actualmente me estoy capacitando en tecnologías de Front End. Mi objetivo a corto plazo es poder desempeñarme en este rubro. <br>
+                Me considero una persona entusiasta y muy curiosa con todo lo relacionado al mundo de la tecnología. <br>
+                Dicto clases de apoyo para nivel medio y terciario
+                </p>
+            
+    
+                <!-- Destacar que es un enlace y no un boton para que funcione -->
+                <!-- Cargar archivo pdf en carpeta y vincular aqui -->
+                <a href="CV Leila Prado.pdf" aria-label="Descargar cv" class="boton" target="_blank">Descargar mi CV</a>
+            </article>
+        </section>
+
+        <section id="contacto">
+            <article class="hablemos">
+                <h2>Hablemos!</h2>
+                <p>Si requiere de clases particulares de matemática, química, física o inglés; puede contactarse cliqueando los siguientes enlaces.</p>
+            </article>
+
+            <ul id="contact-links">
+                <li>
+                    <a href="mailto:leila1995@live.com.ar" target="_blank" aria-label="Enviar mail">
+                        <img src="img/mail.png" class="contacto">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/" target="_blank" aria-label="Ir al perfil de github">
+                        <img src="img/github.png" class="contacto">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com//" target="_blank" aria-label="Ir al perfil de linkedin">
+                        <img src="img/linkedin.png" class="contacto">
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        Código Latam
+    </footer>
+    
+    <!-- JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
