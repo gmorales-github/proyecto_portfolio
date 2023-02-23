@@ -1,9 +1,9 @@
 /* Estilo principal del proyecto */
+
+
 /* Importar fuente */
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-
-
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,6 +18,7 @@ body {
     color: #0f0f0f;
 }
 
+
 /* Header */
 
 header {
@@ -31,14 +32,16 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    box-shadow: 0 3px 10px -5px #5371a8;   
+    box-shadow: 0 3px 10px -5px #5371a8;
 }
 
 .logo {
     width: 120px;
 }
 
+
 /* Para quitar los puntos a los items de listas */
+
 ul {
     list-style: none;
     display: flex;
@@ -60,9 +63,8 @@ a {
     margin-top: 20px;
 }
 
-
 h1 {
-    font-size:  36px;
+    font-size: 36px;
     text-align: center;
 }
 
@@ -75,11 +77,8 @@ p {
 }
 
 
-
-
-
-
 /* Responsive */
+
 img {
     max-width: 100%;
 }
@@ -114,44 +113,48 @@ li.menu-item a {
     display: inline-block;
 }
 
+
 /* Agrego estilos para el .menu-item.active */
+
 li.menu-item:hover,
 li.menu-item.active {
     background: rgba(75, 141, 161, 0.3);
     transition: background-color 0.3s;
 }
 
+
 /* Estilos para menu mobile */
+
 body.mobile-menu-active {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 body.mobile-menu-active img#close-menu {
-	display: block;
+    display: block;
 }
 
 body.mobile-menu-active img#open-menu {
-	display: none;
+    display: none;
 }
 
 body.mobile-menu-active header {
-	height: 100vh;
-	flex-wrap: wrap;
-	align-items: flex-start;
-	transition: height 0.3s;
+    height: 100vh;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    transition: height 0.3s;
 }
 
 body.mobile-menu-active nav {
-	display: block;
-	width: 100%;
-	height: 50%;
+    display: block;
+    width: 100%;
+    height: 50%;
 }
 
 body.mobile-menu-active ul#menu {
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-around;
-	height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
 }
 
 
@@ -174,11 +177,11 @@ section {
 
 
 /* Sección Inicio */
+
 section#inicio {
     justify-content: space-around;
     flex-direction: column;
 }
-
 
 figure.presentacion-img img {
     border-radius: 50%;
@@ -192,7 +195,16 @@ article.presentacion {
 }
 
 
+/* Sección Experiencia */
+
+section#experiencia {
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
 /* Sección Contacto */
+
 section#contacto p {
     text-align: center;
     max-width: 600px;
@@ -201,8 +213,8 @@ section#contacto p {
 article.hablemos {
     text-align: center;
     padding: 10px;
-    background: rgba(75, 141, 161, 0.3);  
-    border-radius: 15px; 
+    background: rgba(75, 141, 161, 0.3);
+    border-radius: 15px;
 }
 
 ul#contact-links {
@@ -228,6 +240,7 @@ img.contacto {
 
 
 /* Footer */
+
 footer {
     height: 90px;
     display: flex;
@@ -236,7 +249,7 @@ footer {
     background-color: #5371a8;
     color: #fbfbfb;
     font-size: 16px;
-   }
+}
 
 
 /* Responsive para escritorio */
@@ -246,44 +259,34 @@ footer {
         font-size: 48px;
         text-align: left;
     }
-
     h2 {
         font-size: 32px;
     }
-
     section#inicio {
         flex-direction: row;
     }
-
     article.presentacion {
         width: 50%;
     }
-
     ul#contact-links li {
         margin: 32px;
     }
-
     /* Ajustar el menú del teléfono */
     #menu-button {
         display: none;
     }
-
     nav {
         display: block;
     }
-
     body.mobile-menu-active header {
-		height: 90px;
-		align-items: center;
-	}
-	body.mobile-menu-active nav {
-		height: auto;
-		width: auto;
-	}
-
-	body.mobile-menu-active ul#menu {
-		flex-direction: row;
-	}
-
+        height: 90px;
+        align-items: center;
+    }
+    body.mobile-menu-active nav {
+        height: auto;
+        width: auto;
+    }
+    body.mobile-menu-active ul#menu {
+        flex-direction: row;
+    }
 }
-
